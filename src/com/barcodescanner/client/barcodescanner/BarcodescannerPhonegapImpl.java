@@ -32,11 +32,10 @@ public class BarcodescannerPhonegapImpl implements Barcodescanner{
 
 	private native void scan0(BarcodescannerCallback callback) /*-{
 			var successCallback = function(data) {
-				callback.@com.mgwtphone.client.barcodescanner.BarcodescannerCallback::onSuccess(Lcom/mgwtphone/client/barcodescanner/BarcodeScannerData;)(data);
-			//callback.@com.mgwtphone.client.barcodescanner.BarcodescannerCallback::onSuccess(Ljava/lang/String;)(data);
+				callback.@com.barcodescanner.client.barcodescanner.BarcodescannerCallback::onSuccess(Lcom/barcodescanner/client/barcodescanner/BarcodeScannerData;)(data);
 		};
 		var errorCallback = function(message) {
-			callback.@com.mgwtphone.client.barcodescanner.BarcodescannerCallback::onFailure(Ljava/lang/String;)(message);
+			callback.@com.barcodescanner.client.barcodescanner.BarcodescannerCallback::onFailure(Ljava/lang/String;)(message);
 		};
 		
 		$wnd.plugins.barcodeScanner.scan($entry(successCallback),

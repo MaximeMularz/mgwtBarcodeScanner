@@ -6,7 +6,7 @@ public class BarcodescannerBrowserImpl implements Barcodescanner{
 
 		@Override
 		public String getText() {
-			return "BarCodeScanner";
+			return "BarcodeScannerDemo";
 		}
 
 		@Override
